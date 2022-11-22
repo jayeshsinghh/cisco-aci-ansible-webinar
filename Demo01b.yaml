@@ -10,7 +10,7 @@
       cisco.aci.aci_tenant:
         host: 10.138.159.158
         username: 'admin'
-        password: 'C1sc0123'
+        password: 'yourpassword'
         validate_certs: no
         tenant: development_tn
         state: present
@@ -20,7 +20,7 @@
       cisco.aci.aci_vrf:
         host: 10.138.159.158
         username: 'admin'
-        password: 'C1sc0123'
+        password: 'yourpassword'
         validate_certs: no
         vrf: dev_vrf
         tenant: development_tn
@@ -33,7 +33,7 @@
       cisco.aci.aci_bd:
         host: 10.138.159.158
         username: 'admin'
-        password: 'C1sc0123'
+        password: 'yourpassword'
         validate_certs: no
         tenant: development_tn
         bd: 192.168.1.0_24_bd
@@ -45,7 +45,7 @@
       cisco.aci.aci_bd_subnet:
         host: 10.138.159.158
         username: 'admin'
-        password: 'C1sc0123'
+        password: 'yourpassword'
         validate_certs: no
         tenant: development_tn
         bd: 192.168.1.0_24_bd
@@ -59,7 +59,7 @@
       cisco.aci.aci_bd_to_l3out:
         host: 10.138.159.158
         username: 'admin'
-        password: 'C1sc0123'
+        password: 'yourpassword'
         validate_certs: no
         tenant: development_tn
         bd: 192.168.1.0_24_bd
