@@ -1,0 +1,17 @@
+# ACI playbook - Demo 01a - Create Development Tenant
+# First playbook using documentation examples (delegate_to: localhost has been replaced by connection: local)
+---
+- name: Create Development Tenant
+  hosts: localhost
+  gather_facts: no
+  connection: local
+
+  tasks:
+    - name: Add Development Tenant
+      cisco.aci.aci_tenant:
+        host: sandboxapicdc.cisco.com
+        username: admin
+        password: '!v3G@!4@Y'
+        validate_certs: no
+        tenant: development_tn
+        state: present
