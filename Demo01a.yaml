@@ -11,7 +11,7 @@
       cisco.aci.aci_tenant:
         host: sandboxapicdc.cisco.com
         username: admin
-        password: '!v3G@!4@Y'
+        password: 'yourpassword'
         validate_certs: no
         tenant: development_tn
         state: present
